@@ -2,14 +2,14 @@ name: Build huggingface Image
 
 on:
   push:
-    branches: [ hug ]
+    branches: [ hub ]
     paths:
       - 'Dockerfile'
       - 'index.js'
       - 'package.json'
       - 'index.html'
   pull_request:
-    branches: [ hug ]
+    branches: [ hub ]
   workflow_dispatch:
 
 jobs:
